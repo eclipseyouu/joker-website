@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Джокер - Кинематограф Хаоса</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="images/logo.png" alt="JOKER" class="logo-image">
+                    <span class="logo-text">JOKER</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#jokers" class="nav-link">ДЖОКЕРЫ</a>
+                    <a href="#movies" class="nav-link">ФИЛЬМЫ</a>
+                    <a href="#contact" class="nav-link">СВЯЗЬ</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="movies-slider">
+        <div class="slider-container">
+            <div class="slider-content"></div>
+            <div class="slider-controls">
+                <button class="slider-prev">‹</button>
+                <div class="slider-dots"></div>
+                <button class="slider-next">›</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="jokers" class="section">
+        <div class="container">
+            <h2 class="section-title">ЛИКИ БЕЗУМИЯ</h2>
+            <div class="jokers-grid">
+                <div class="joker-card" data-actor="heath">
+                    <div class="card-image" style="background-image: url('images/15172248_3683329.jpg')">
+                        <div class="actor-overlay">ХИТ ЛЕДЖЕР</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Хит Леджер</h3>
+                        <p class="movie">Темный рыцарь (2008)</p>
+                        <div class="card-details">
+                            <p><strong>Стиль:</strong> анархичный, реалистичный</p>
+                            <p><strong>Элементы:</strong> шрамы, грим, пальто</p>
+                        </div>
+                        <div class="card-button">УЗНАТЬ БОЛЬШЕ →</div>
+                    </div>
+                </div>
+
+                <div class="joker-card" data-actor="joaquin">
+                    <div class="card-image" style="background-image: url('images/sds.png')">
+                        <div class="actor-overlay">ХОАКИН ФЕНИКС</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Хоакин Феникс</h3>
+                        <p class="movie">Джокер (2019)</p>
+                        <div class="card-details">
+                            <p><strong>Стиль:</strong> психологический, трагический</p>
+                            <p><strong>Элементы:</strong> танец, грим, костюм</p>
+                        </div>
+                        <div class="card-button">УЗНАТЬ БОЛЬШЕ →</div>
+                    </div>
+                </div>
+
+                <div class="joker-card" data-actor="jared">
+                    <div class="card-image" style="background-image: url('images/83cde2f0c5207127eccf13bcad7fec23.jpg')">
+                        <div class="actor-overlay">ДЖАРЕД ЛЕТО</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Джаред Лето</h3>
+                        <p class="movie">Отряд самоубийц (2016)</p>
+                        <div class="card-details">
+                            <p><strong>Стиль:</strong> гангстерский, эксцентричный</p>
+                            <p><strong>Элементы:</strong> татуировки, украшения</p>
+                        </div>
+                        <div class="card-button">УЗНАТЬ БОЛЬШЕ →</div>
+                    </div>
+                </div>
+
+                <div class="joker-card" data-actor="jack">
+                    <div class="card-image" style="background-image: url('images/MV5BYjcyZmRlNDgtMjk3Ny00NDE0LTlhM2QtYTFjZjVkNWZkOWQxXkEyXkFqcGc@._V1_.jpg')">
+                        <div class="actor-overlay">ДЖЕК НИКОЛСОН</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Джек Николсон</h3>
+                        <p class="movie">Бэтмен (1989)</p>
+                        <div class="card-details">
+                            <p><strong>Стиль:</strong> театральный, гротескный</p>
+                            <p><strong>Элементы:</strong> улыбка, костюм, смех</p>
+                        </div>
+                        <div class="card-button">УЗНАТЬ БОЛЬШЕ →</div>
+                    </div>
+                </div>
+
+                <div class="joker-card" data-actor="cesar">
+                    <div class="card-image" style="background-image: url('images/d520f7eb54f25de4673afde763216d19.jpg')">
+                        <div class="actor-overlay">СЕЗАР РОМЕРО</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Сезар Ромеро</h3>
+                        <p class="movie">Бэтмен (1966)</p>
+                        <div class="card-details">
+                            <p><strong>Стиль:</strong> комедийный, классический</p>
+                            <p><strong>Элементы:</strong> грим, яркий костюм</p>
+                        </div>
+                        <div class="card-button">УЗНАТЬ БОЛЬШЕ →</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="movies" class="section">
+        <div class="container">
+            <h2 class="section-title">КИНЕМАТОГРАФ ХАОСА</h2>
+            <div class="movies-grid">
+                <div class="movie-card" data-movie="darkKnight">
+                    <div class="movie-poster" style="background-image: url('images/movie-poster-1.jpg')">
+                        <div class="movie-overlay">ТЕМНЫЙ РЫЦАРЬ</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Темный рыцарь (2008)</h3>
+                        <p>Шедевр Кристофера Нолана. Хит Леджер создал культовый образ анархиста.</p>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="joker2019">
+                    <div class="movie-poster" style="background-image: url('images/movie-poster-2.jpg')">
+                        <div class="movie-overlay">ДЖОКЕР 2019</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Джокер (2019)</h3>
+                        <p>Трагический портрет происхождения злодея. Хоакин Феникс создал шокирующий образ.</p>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="suicideSquad">
+                    <div class="movie-poster" style="background-image: url('images/movie-poster-3.jpg')">
+                        <div class="movie-overlay">ОТРЯД САМОУБИЙЦ</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Отряд самоубийц (2016)</h3>
+                        <p>Яркий хаос команды злодеев. Джаред Лето представил гангстерскую версию.</p>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="batman1989">
+                    <div class="movie-poster" style="background-image: url('images/movie-poster-4.jpg')">
+                        <div class="movie-overlay">БЭТМЕН 1989</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Бэтмен (1989)</h3>
+                        <p>Готическое возрождение темного рыцаря. Джек Николсон создал театрального злодея.</p>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="batman1966">
+                    <div class="movie-poster" style="background-image: url('images/movie-poster-5.jpg')">
+                        <div class="movie-overlay">БЭТМЕН 1966</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Бэтмен (1966)</h3>
+                        <p>Комедийная классика с Адамом Уэстом. Сезар Ромеро представил сатирического злодея.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title shake-trigger" id="whySerious">
+                Why so serious?
+                <div class="easter-egg" id="easterEgg">
+                    <img src="images/joker-secret.jpg" alt="Секретный Джокер" class="secret-photo">
+                </div>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="feedbackForm">
+                        <div class="form-group">
+                            <label for="userName" class="form-label">ТВОЕ ИМЯ</label>
+                            <input type="text" id="userName" class="form-input" placeholder="Как к тебе обращаться?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userEmail" class="form-label">ТВОЯ ПОЧТА</label>
+                            <input type="email" id="userEmail" class="form-input" placeholder="куда тебе ответить?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userMessage" class="form-label">ТВОЕ СООБЩЕНИЕ</label>
+                            <textarea id="userMessage" class="form-textarea" placeholder="Пиши всё, что приходит в голову..." rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <span class="submit-text">ОТПРАВИТЬ В ХАОС</span>
+                            <span class="submit-icon">🃏</span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="telegram-contact">
+                    <div class="telegram-card">
+                        <div class="telegram-icon">
+                            <i class="fab fa-telegram-plane"></i>
+                        </div>
+                        <div class="telegram-info">
+                            <h3>НАПИШИ МНЕ В ТЕЛЕГРАМ</h3>
+                            <div class="telegram-username" onclick="copyToClipboard('dimawesss')">
+                                <span class="telegram-label">Telegram:</span>
+                                <span class="telegram-value">@dimawesss</span>
+                                <i class="fas fa-copy copy-icon"></i>
+                            </div>
+                            <p class="telegram-description">Или используй форму выше для подробного сообщения</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Why so serious? © 2025</p>
+        </div>
+    </footer>
+
+    <div id="actorModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <div id="movieModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeMovieModal()">×</button>
+            <div id="movieModalContent"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
