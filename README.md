@@ -36,7 +36,7 @@ Font Awesome - Иконки
 🚀 Установка и Запуск
 Клонируйте репозиторий
 bash
-git clone https://github.com/your-username/joker-website.git
+git clone https://github.com/eclipseyouu/joker-website.git
 cd joker-website
 Запуск через Live Server
 Откройте проект в VS Code
